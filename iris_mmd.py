@@ -138,6 +138,9 @@ out = sess.run([correct,num, h3_0, h3_1, mean0, mean1, x0], feed_dict={x0: x_00,
 #print out test results
 print("test results")
 print(out[0],out[1])
+print("accuracy")
+print(out[0]/out[1])
+
 # print(out[4], out[5])
 test0_score = open('output/test0.txt','w')
 for score_test0 in out[2]:
